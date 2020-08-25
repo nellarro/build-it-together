@@ -4,7 +4,7 @@ Welcome to week 4! Your midterm is to collaborate with the rest of your classmat
 ### Submission
 To submit your part of the assignment, make sure you fork this repository. To be considered complete, you'll have to have both of your pull requests merged in to this project. **This means you can not wait until Sunday to complete this project since someone might be waiting on your work to get started on their part of the midterm**. Once you've submitted your pull requests, make sure you post in the channel so that the instructors can merge in your code so you can receive your grade.
 
-When your pull requests have been merged, submit a Google Doc with a gif from [giphy.com](giphy.com) 
+When your pull requests have been merged, submit a Google Doc with a gif from [giphy.com](www.giphy.com)
 
 #### Warning
 This is meant to be challenging. You'll all have to work together to create a great site!
