@@ -1,4 +1,4 @@
-# build-it-together
+# Build-it-together
 Welcome to week 4! Your midterm is to collaborate with the rest of your classmates to build something together. You'll use all of the knowledge you've gained thus far to create a website together. This is something that you will have to do as a professional developer if you ever decide to work with a company or with another team. 
 
 ### Submission
