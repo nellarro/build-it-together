@@ -3,3 +3,44 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+#footer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #0B5563;
+  font-size: 12pt;
+  font-weight: bold;
+  font-style: italic;
+  padding: 12px;
+}
+
+#footer ul {
+  text-decoration: none;
+}
+
+#footer ul li {
+  display: inline;
+  padding: 20px;
+}
+
+#footer a:link {
+  color: #fff;
+  text-decoration: none;
+}
+
+#footer a:visited {
+  color: #E83151;
+  text-decoration: none;
+}
+
+#footer a:hover {
+  color: #FFCB77;
+  text-decoration: none;
+}
+
+.foothead {
+  margin-right: 45px;
+  color: #fff;
+}
