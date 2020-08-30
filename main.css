@@ -28,6 +28,22 @@ h3{
 p{
   margin: 0 auto 0 auto;
 }
+@media screen and ( min-width: 961px ) {
+  body { 
+    background-color: #FFCB77;
+   }
+  }
+  @media screen and ( min-width:560px ) and ( max-width: 960px ) {
+    body { 
+      background-color: #60B2E5 ;
+     }
+  }
+  @media screen and ( max-width: 560px ) {
+    body { 
+      background-color: #FFCB77;
+     }
+    }
+  
 /* Footer Section Starts Here*/
 #footer {
   display: flex;
