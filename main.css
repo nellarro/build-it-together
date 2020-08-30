@@ -4,6 +4,10 @@
     box-sizing: border-box;
 }
 
+body {
+  font-family: Arial;
+} 
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -44,3 +48,30 @@
   margin-right: 45px;
   color: #fff;
 }
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+    body {
+        color: black;
+        background-color: #FFCB77; /* Yellow */
+        font-weight: normal;
+        font-size: 14px;
+    }
+  }
+  
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #F5CF8E; /* Yellow */
+    }
+  }
+  
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+        color: white;
+        background-color: #5E5C6C; /* Gray */
+        font-weight: bold;
+        font-size: 16px;
+    }
+  }
