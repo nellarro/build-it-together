@@ -3,7 +3,32 @@
     padding: 0;
     box-sizing: border-box;
 }
+/*Header/Logo Section Goes Here*/
 
+
+/*Main Body Section Starts Here*/
+body {
+  font-family:Arial;
+  line-height: 1.2em;
+}
+.container {
+  margin: auto;
+  Width: 70%;
+}
+h1,h3{
+  text-align: center;
+}
+h1{
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+h3{
+  margin: 40px 0;
+}
+p{
+  margin: 0 auto 0 auto;
+}
+/* Footer Section Starts Here*/
 #footer {
   display: flex;
   flex-direction: row;
