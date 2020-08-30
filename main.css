@@ -4,7 +4,7 @@
   box-sizing: border-box;
 }
 
-/* BOT Logo */
+/*Header/Logo Section Goes Here*/
 
 header {
   display: flex;
@@ -17,9 +17,8 @@ header {
   height: 4em;
   width: 8em;
   margin: 5px;
+  background-color: #FFCB77;
 }
-
-/*Header/Logo Section Goes Here*/
 
 /*Main Body Section Starts Here*/
 
@@ -94,16 +93,10 @@ p {
   color: #fff;
 }
 
-/* .header-logo:hover {
-  background-color: pink;
-  transform: rotate(180deg) scale(1);
-  transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1) 2.0s; */
-
 /* Media Starts Below */
 
 /* Mobile Styles */
-
-@media only screen and (max-width: 400px) {
+@media only screen and (max-width: 500px) {
   body {
     color: black;
     background-color: #FFCB77;
@@ -111,29 +104,32 @@ p {
     font-weight: normal;
     font-size: 14px;
   }
-}
-
-/* Tablet Styles */
-
-@media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #60B2E5;
-    /* Blue*/
+  
+  .bot-logo:hover {
+    background-color: pink;
+    transform: rotate(180deg) scale(1);
+    transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1) 2.0s;
   }
-}
 
-/* Desktop Styles */
+  /* Tablet Styles */
+  @media only screen and (min-width: 401px) and (max-width: 960px) {
+    body {
+      background-color: #60B2E5;
+      /* Blue*/
+    }
+  }
 
-@media only screen and (min-width: 961px) {
-  body {
-    color: white;
-    background-color: #5E5C6C;
-    /* Gray */
-    font-weight: bold;
-    font-size: 16px;
+  /* Desktop Styles */
+  @media only screen and (min-width: 961px) {
+    body {
+      color: white;
+      background-color: #5E5C6C;
+      /* Gray */
+      font-weight: bold;
+      font-size: 16px;
+    }
+    .header-logo {
+      transform: scale(1.5);
+      padding: 1.15em;
+    }
   }
-  .header-logo {
-    transform: scale(1.5);
-    padding: 1.15em;
-  }
-}
