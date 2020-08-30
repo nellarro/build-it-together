@@ -114,8 +114,8 @@ p {
   font-size: 12pt;
   font-weight: bold;
   font-style: italic;
-  margin-top: 10px;
-  height: 45px;
+  padding: 12px;
+  margin-top: 50px;
 }
 
 #footer ul {
