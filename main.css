@@ -19,6 +19,39 @@ header {
   margin: 5px;
 }
 
+/*Header/Logo Section Goes Here*/
+
+/*Main Body Section Starts Here*/
+
+body {
+  font-family: Arial;
+  line-height: 1.2em;
+}
+
+.container {
+  margin: auto;
+  Width: 75%;
+}
+
+h1, h3 {
+  text-align: center;
+}
+
+h1 {
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+h3 {
+  margin: 40px 0;
+}
+
+p {
+  margin: 0 auto;
+}
+
+/* Footer Section Starts Here*/
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -29,6 +62,7 @@ header {
   font-weight: bold;
   font-style: italic;
   padding: 12px;
+  margin-top: 50px;
 }
 
 #footer ul {
@@ -60,34 +94,43 @@ header {
   color: #fff;
 }
 
-/* --------- MEDIA QUERIES --------- */
+/* .header-logo:hover {
+  background-color: pink;
+  transform: rotate(180deg) scale(1);
+  transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1) 2.0s; */
+
+/* Media Starts Below */
 
 /* Mobile Styles */
 
-@media only screen and (max-width: 560px) {
-  header {
-    background-color: aqua;
-  }
-  .header-logo:hover {
-    background-color: pink;
-    transform: rotate(180deg) scale(1);
-    transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1) 2.0s;
+@media only screen and (max-width: 400px) {
+  body {
+    color: black;
+    background-color: #FFCB77;
+    /* Yellow */
+    font-weight: normal;
+    font-size: 14px;
   }
 }
 
 /* Tablet Styles */
 
-@media only screen and (min-width: 561px) and (max-width: 960px) {
-  header {
-    background-color: burlywood;
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #60B2E5;
+    /* Blue*/
   }
 }
 
 /* Desktop Styles */
 
 @media only screen and (min-width: 961px) {
-  header {
-    background-color: darkgreen;
+  body {
+    color: white;
+    background-color: #5E5C6C;
+    /* Gray */
+    font-weight: bold;
+    font-size: 16px;
   }
   .header-logo {
     transform: scale(1.5);
