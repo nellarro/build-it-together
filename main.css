@@ -4,6 +4,21 @@
     box-sizing: border-box;
 }
 
+/* BOT Logo */
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.logo {
+  display: flex;
+  height: 4em;
+  width: 8em;
+  margin: 5px;
+} 
+
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -43,4 +58,40 @@
 .foothead {
   margin-right: 45px;
   color: #fff;
+}
+
+/* --------- MEDIA QUERIES --------- */
+
+/* Mobile Styles */
+@media only screen and (max-width: 560px) {
+  header {
+    background-color: aqua;
+  }
+
+  .header-logo:hover {
+    background-color: pink;
+    transform: rotate(180deg) scale(1);
+    transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1) 2.0s;
+  } 
+
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: 561px) and (max-width: 960px) {
+  header {
+    background-color: burlywood;
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: 961px) {
+  header {
+    background-color: darkgreen;
+  }
+
+  .header-logo {
+    transform: scale(1.5);
+    padding: 1.15em;
+  }
+  
 }
