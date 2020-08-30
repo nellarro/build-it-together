@@ -14,10 +14,9 @@ header {
 
 .logo {
   display: flex;
-  height: 4em;
+  /* height: 4em; */
   width: 8em;
-  margin: 5px;
-  background-color: #FFCB77;
+  /* background-color: #FFCB77; */
 }
 
 /*Main Body Section Starts Here*/
@@ -96,6 +95,7 @@ p {
 /* Media Starts Below */
 
 /* Mobile Styles */
+
 @media only screen and (max-width: 500px) {
   body {
     color: black;
@@ -104,32 +104,50 @@ p {
     font-weight: normal;
     font-size: 14px;
   }
-  
-  .bot-logo:hover {
-    background-color: pink;
-    transform: rotate(180deg) scale(1);
-    transition: all 0.5s cubic-bezier(0.33, 1, 0.68, 1) 2.0s;
+  /* Logo should do a 180 spin when hovered */
+  .front {
+    transform: rotate3d(180deg);
+    transition: 2s;
   }
+  .logo:hover {
+    transform: rotateY(180deg);
+  }
+  .logo:hover::after {
+    transform: rotateY(-180deg);
+  }
+}
 
-  /* Tablet Styles */
-  @media only screen and (min-width: 401px) and (max-width: 960px) {
-    body {
-      background-color: #60B2E5;
-      /* Blue*/
-    }
-  }
+/* Tablet Styles */
 
-  /* Desktop Styles */
-  @media only screen and (min-width: 961px) {
-    body {
-      color: white;
-      background-color: #5E5C6C;
-      /* Gray */
-      font-weight: bold;
-      font-size: 16px;
-    }
-    .header-logo {
-      transform: scale(1.5);
-      padding: 1.15em;
-    }
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  body {
+    background-color: #60B2E5;
+    /* Blue*/
   }
+  .logo {
+    transform: scale(1);
+  }
+  /*
+  .back { 
+     position: absolute;
+    top: 0;
+    background-color: #fff;
+    display: flex;
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.1); */
+  /* transform: rotateY(0);
+    backface-visibility: hidden;
+    transition: 0.8s; */
+  /* } */
+}
+
+/* Desktop Styles */
+
+@media only screen and (min-width: 961px) {
+  body {
+    color: white;
+    background-color: #5E5C6C;
+    /* Gray */
+    font-weight: bold;
+    font-size: 16px;
+  }
+}
