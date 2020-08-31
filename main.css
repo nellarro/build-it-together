@@ -1,13 +1,25 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 /*Header/Logo Section Goes Here*/
 
+header {
+  display: flex;
+  justify-content: flex-start;
+  padding: 1em;
+}
+
+.logo {
+  display: flex;
+  height: 4em;
+  width: 8em;
+}
 
 /*Main Body Section Starts Here*/
+
 body {
   font-family: Arial;
   line-height: 1.2em;
@@ -18,8 +30,7 @@ body {
   Width: 75%;
 }
 
-h1, 
-h3 {
+h1, h3 {
   text-align: center;
 }
 
@@ -35,8 +46,9 @@ h3 {
 p {
   margin: 0 auto;
 }
- 
+
 /* Footer Section Starts Here*/
+
 #footer {
   display: flex;
   flex-direction: row;
@@ -78,31 +90,67 @@ p {
   margin-right: 45px;
   color: #fff;
 }
+
 /* Media Starts Below */
 
 /* Mobile Styles */
+
 @media only screen and (max-width: 400px) {
   body {
     color: black;
-    background-color: #FFCB77; /* Yellow */
+    background-color: #FFCB77;
+    /* Yellow */
     font-weight: normal;
     font-size: 14px;
+  }
+  /* Logo should do a 180 spin when hovered */
+  .front {
+    transform: rotate3d(180deg);
+    transition: 2s;
+  }
+  .logo:hover {
+    transform: rotateY(180deg);
+  }
+  .logo:hover::after {
+    transform: rotateY(-180deg);
   }
 }
 
 /* Tablet Styles */
+
 @media only screen and (min-width: 401px) and (max-width: 960px) {
   body {
-    background-color: #60B2E5; /* Blue*/
+    background-color: #60B2E5;
+    /* Blue*/
+  }
+  /* Logo should flip on the y axis */
+  .logo {
+    transform: rotateY(180deg);
+    transition-duration: 2s;
   }
 }
 
 /* Desktop Styles */
+
 @media only screen and (min-width: 961px) {
   body {
     color: white;
-    background-color: #5E5C6C; /* Gray */
+    background-color: #5E5C6C;
+    /* Gray */
     font-weight: bold;
     font-size: 16px;
+  }
+  /* Logo should get slightly larger and then go back to normal size */
+  .logoDisplay {
+    animation: 1.5s ease 1 normal botGrows;
+    position: absolute;
+  }
+  @keyframes botGrows {
+    from {
+      transform: scale(1);
+    }
+    to {
+      transform: scale(2);
+    }
   }
 }
