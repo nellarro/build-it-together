@@ -14,9 +14,8 @@ header {
 
 .logo {
   display: flex;
-  /* height: 4em; */
+  height: 4em;
   width: 8em;
-  /* background-color: #FFCB77; */
 }
 
 /*Main Body Section Starts Here*/
