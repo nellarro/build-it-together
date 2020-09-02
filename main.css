@@ -1,156 +1,239 @@
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
+
 
 /*Header/Logo Section Goes Here*/
 
 header {
-  display: flex;
-  justify-content: flex-start;
-  padding: 1em;
+    display: flex;
+    justify-content: flex-start;
+    padding: 1em;
 }
 
 .logo {
-  display: flex;
-  height: 4em;
-  width: 8em;
+    display: flex;
+    height: 4em;
+    width: 8em;
 }
+
 
 /*Main Body Section Starts Here*/
 
 body {
-  font-family: Arial;
-  line-height: 1.2em;
+    font-family: Arial;
+    line-height: 1.2em;
 }
 
 .container {
-  margin: auto;
-  Width: 75%;
-}
-
-h1, h3 {
-  text-align: center;
+    margin: auto;
+    Width: 75%;
 }
 
 h1 {
-  margin-top: 40px;
-  margin-bottom: 50px;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    text-align: center;
 }
 
 h3 {
-  margin: 40px 0;
+    margin: 40px 0;
+    text-align: center;
 }
 
 p {
-  margin: 0 auto;
+    margin: 0 auto;
 }
+
 
 /* Footer Section Starts Here*/
 
 #footer {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  background-color: #0B5563;
-  font-size: 12pt;
-  font-weight: bold;
-  font-style: italic;
-  padding: 12px;
-  margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    background-color: #0B5563;
+    font-size: 12pt;
+    font-weight: bold;
+    font-style: italic;
+    padding: 12px;
+    margin-top: 50px;
 }
 
 #footer ul {
-  text-decoration: none;
+    text-decoration: none;
 }
 
 #footer ul li {
-  display: inline;
-  padding: 20px;
+    display: inline;
+    padding: 20px;
 }
 
 #footer a:link {
-  color: #fff;
-  text-decoration: none;
+    color: #fff;
+    text-decoration: none;
 }
 
 #footer a:visited {
-  color: #E83151;
-  text-decoration: none;
+    color: #E83151;
+    text-decoration: none;
 }
 
 #footer a:hover {
-  color: #FFCB77;
-  text-decoration: none;
+    color: #FFCB77;
+    text-decoration: none;
 }
 
 .foothead {
-  margin-right: 45px;
-  color: #fff;
+    margin-right: 45px;
+    color: #fff;
 }
 
+
 /* Media Starts Below */
+
 
 /* Mobile Styles */
 
 @media only screen and (max-width: 400px) {
-  body {
-    color: black;
-    background-color: #FFCB77;
-    /* Yellow */
-    font-weight: normal;
-    font-size: 14px;
-  }
-  /* Logo should do a 180 spin when hovered */
-  .front {
-    transform: rotate3d(180deg);
-    transition: 2s;
-  }
-  .logo:hover {
-    transform: rotateY(180deg);
-  }
-  .logo:hover::after {
-    transform: rotateY(-180deg);
-  }
+    body {
+        color: black;
+        background-color: #FFCB77;
+        /* Yellow */
+        font-weight: normal;
+        font-size: 14px;
+    }
+    /* Logo should do a 180 spin when hovered */
+    .front {
+        transform: rotate3d(180deg);
+        transition: 2s;
+    }
+    .logo:hover {
+        transform: rotateY(180deg);
+    }
+    .logo:hover::after {
+        transform: rotateY(-180deg);
+    }
 }
+
 
 /* Tablet Styles */
 
 @media only screen and (min-width: 401px) and (max-width: 960px) {
-  body {
-    background-color: #60B2E5;
-    /* Blue*/
-  }
-  /* Logo should flip on the y axis */
-  .logo {
-    transform: rotateY(180deg);
-    transition-duration: 2s;
-  }
+    body {
+        background-color: #60B2E5;
+        /* Blue*/
+    }
+    /* Logo should flip on the y axis */
+    .logo {
+        transform: rotateY(180deg);
+        transition-duration: 2s;
+    }
 }
+
 
 /* Desktop Styles */
 
 @media only screen and (min-width: 961px) {
-  body {
-    color: white;
-    background-color: #5E5C6C;
-    /* Gray */
-    font-weight: bold;
-    font-size: 16px;
-  }
-  /* Logo should get slightly larger and then go back to normal size */
-  .logoDisplay {
-    animation: 1.5s ease 1 normal botGrows;
-    position: absolute;
-  }
-  @keyframes botGrows {
-    from {
-      transform: scale(1);
+    body {
+        color: white;
+        background-color: #5E5C6C;
+        /* Gray */
+        font-weight: bold;
+        font-size: 16px;
     }
-    to {
-      transform: scale(2);
+    /* Logo should get slightly larger and then go back to normal size */
+    .logoDisplay {
+        animation: 1.5s ease 1 normal botGrows;
+        position: absolute;
     }
-  }
+    @keyframes botGrows {
+        from {
+            transform: scale(1);
+        }
+        to {
+            transform: scale(2);
+        }
+    }
+}
+
+
+/* ----------- Phone Screens ----------- */
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
+    body {
+        background-color: #d4cfc7;
+    }
+}
+
+@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
+    body {
+        background-color: #ffa20d;
+    }
+}
+
+@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
+    body {
+        background-color: #BDBD;
+    }
+}
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
+    body {
+        background-color: rgba(206, 115, 206, 0);
+    }
+}
+
+
+/* ----------- Laptops Non-Retina Screens ----------- */
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
+
+body {
+    background: beige;
+}
+
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
+
+body {
+    background: burlywood;
+}
+
+
+/* Screens on IPADS or Tablets */
+
+
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+    /* Styles */
+}
+
+body {
+    background: coral;
+}
+
+
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+    /* Styles */
+}
+
+body {
+    background: darkcyan;
+}
+
+
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+    /* Styles */
+}
+
+body {
+    background: #ffa20d
 }
