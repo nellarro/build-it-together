@@ -63,23 +63,27 @@ p {
   height: 300px;
   transition: .2s ease;
   backface-visibility: hidden;
-  margin-top: 25px;
+
 }
 
 .img {
   width: 100%;
-  margin: 5px
+  margin: 5px;
+  position: relative;
+  margin-top: 25px;
 }
 .overlay {
   background: rgba(0,0,0,0.4);
   transition: .2s ease;
   opacity: 0;
-  position: relative;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   text-align: center;
-  z-index: 5
+  z-index: 5;
+  width: 100%;
+  height: 100%;
 }
 
 .photo:hover {
@@ -91,10 +95,11 @@ p {
 }
 
 .text {
-  background-color: black;
   color: white;
-  font-size: 16px;
+  font-size: 17px;
   padding: 16px 32px;
+  margin-top: 50%;
+  background-color: #f1aa57;
 }
 
 /* Footer Section Starts Here*/
