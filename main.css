@@ -161,62 +161,6 @@ p {
 }
 
 
-/* ----------- Phone Screens ----------- */
-
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: portrait) {
-    body {
-        background-color: #d4cfc7;
-    }
-}
-
-@media screen and (device-width: 320px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) and (orientation: landscape) {
-    body {
-        background-color: #ffa20d;
-    }
-}
-
-@media screen and (device-width: 360px) and (device-height: 640px) and (-webkit-device-pixel-ratio: 2) {
-    body {
-        background-color: #BDBD;
-    }
-}
-
-@media only screen and (min-device-width: 320px) and (max-device-width: 480px) and (-webkit-min-device-pixel-ratio: 2) and (orientation: portrait) {
-    body {
-        background-color: rgba(206, 115, 206, 0);
-    }
-}
-
-
-/* ----------- Laptops Non-Retina Screens ----------- */
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {}
-
-body {
-    background: beige;
-}
-
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {}
-
-body {
-    background: burlywood;
-}
-
-
-/* Screens on IPADS or Tablets */
-
-
-/* iPads (portrait and landscape) ----------- */
-
-@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
-    /* Styles */
-}
-
-body {
-    background: coral;
-}
-
-
 /* iPads (portrait) ----------- */
 
 @media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
@@ -228,12 +172,12 @@ body {
 }
 
 
-/* Desktops and laptops ----------- */
+/* iPads (portrait and landscape) ----------- */
 
-@media only screen and (min-width: 1224px) {
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
     /* Styles */
 }
 
 body {
-    background: #ffa20d
+    background: coral;
 }
