@@ -16,11 +16,33 @@ header {
   justify-content: flex-start;
   padding: 1em;
 }
+.hero_banner {
+  background-image:linear-gradient(rgba(255, 255, 255, 0.733), rgba(255, 255, 255, 0.26)), url(./banner.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: 100vw;
+  height: 80vh;
+  display: flex;
+  justify-content: space-between;
+  position: relative;
+}
 
 .logo {
   display: flex;
   height: 4em;
   width: 8em;
+}
+
+.hero_banner h1 {
+  font-size: 70px;
+  color: black;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%) }
 }
 
 /*Main Body Section Starts Here*/
