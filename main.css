@@ -51,6 +51,11 @@ header {
   text-shadow: 5px 3px 5px #1394a5;
 }
 
+.color_w {
+  color:#e45225;
+  text-shadow: 4px 3px 5px #000;
+}
+
 /*Main Body Section Starts Here*/
 
 body {
