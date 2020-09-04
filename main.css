@@ -19,7 +19,7 @@ header {
 }
 
 .hero_banner {
-  background-image:linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.418)), url(./banner.jpg);
+  background-image:linear-gradient(rgba(255, 255, 255, 0.829), rgba(255, 255, 255, 0.418)), url(./images/banner.jpg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
